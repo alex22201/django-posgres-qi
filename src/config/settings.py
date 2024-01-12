@@ -112,7 +112,7 @@ if ENVIRONMENT == 'prod':
             'PORT': POSTGRES_PORT,
         }
     }
-print(ENVIRONMENT)
+
 if ENVIRONMENT == 'local':
     DATABASES = {
         'default': {
@@ -120,7 +120,6 @@ if ENVIRONMENT == 'local':
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-# print(DATABASES)
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 

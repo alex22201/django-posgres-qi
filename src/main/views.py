@@ -14,7 +14,6 @@ def main(request):
 
 @api_view(['GET'])
 def api_endpoint(request):
-    print()
     cryptocurrency_name = request.GET.get('name', None)
 
     if cryptocurrency_name:
