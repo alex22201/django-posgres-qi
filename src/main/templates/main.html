@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Usage Instructions</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* light gray background color */
+            color: #333; /* dark blue text color */
+            margin: 20px;
+        }
+
+        h1 {
+            color: #1e90ff; /* steel blue heading color */
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        code {
+            background-color: #f0f0f0; /* light gray background color for code */
+            color: #333; /* dark blue text color for code */
+            padding: 2px 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: #f0f0f0; /* light gray background color for code block */
+            color: #333; /* dark blue text color for code block */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the API Page!</h1>
+
+    <p>To use our API, follow these steps:</p>
+
+    <ol>
+        <li>Open your application or tool for sending HTTP requests.</li>
+        <li>Make a GET request to the following address: <code>http://127.0.0.1:8000/api/</code></li>
+        <li>Specify the <code>name</code> parameter in the request to get information about a specific cryptocurrency. For example: <code>http://127.0.0.1:8000/api/?name=bitcoin</code></li>
+        <li>Expect a JSON response with information about the cryptocurrency.</li>
+    </ol>
+
+    <p>Example response:</p>
+
+    <pre>
+        {
+            "name": "Bitcoin",
+            "price": 46000,
+            "last_updated": "2022-01-12T12:34:56Z"
+        }
+    </pre>
+
+    <p>Don't forget to replace <code>http://127.0.0.1:8000</code> with the actual address of your server.</p>
+</body>
+</html>
